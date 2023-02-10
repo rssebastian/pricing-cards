@@ -1,0 +1,225 @@
+/* ///////////////
+  Reset
+  ////////////// */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ///////////////
+  General styling
+  ////////////// */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 0;
+  color: #00a1ab;
+}
+
+.fs-500 {
+  font-size: 1.3125rem;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 3.0625rem 1rem;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/* ///////////////
+  Buttons
+  ////////////// */
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5em 0.75em;
+  border-radius: 0.25em;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: #00a1ab;
+  color: #fff;
+  align-self: center;
+  margin-top: 0.6875rem;
+  font-size: 0.875rem;
+}
+
+.button--light {
+  background: white;
+  color: #4e4e4e;
+}
+
+.button--dark {
+  color: white;
+  background: #4e4e4e;
+}
+
+/* ///////////////
+  Plans
+  ////////////// */
+
+.plans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.75em 0;
+}
+
+.plan {
+  width: 16.3125rem;
+  height: 23.125rem;
+  padding: 2em;
+  border-radius: 1em;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.plan--light {
+  color: #4e4e4e;
+  background: linear-gradient(-45deg, #e5e3e8, #fafafa);
+}
+
+.plan--light .plan__price {
+  color: #00a1ab;
+}
+
+.plan--light .button {
+  color: white;
+  background: #4e4e4e;
+}
+
+.plan--dark {
+  color: #e6e4e9;
+  background: #4e4e4e;
+}
+
+.plan--dark .plan__price {
+  color: #ffffff;
+}
+
+.plan--accent {
+  color: #fff;
+  background: linear-gradient(-45deg, #00a1ab, #3741a0);
+  padding: 1.625rem 2em;
+}
+
+.plan.plan--accent {
+  max-height: 26.375rem;
+  height: 26.375rem;
+}
+
+.plan--accent .button {
+  background: white;
+  color: #4e4e4e;
+}
+
+.plan__title {
+  text-transform: uppercase;
+  margin: 0 0 1em;
+  font-size: 1.10625rem;
+}
+
+.plan__price {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 900;
+  margin: 0;
+}
+
+.plan__price span {
+  display: block;
+  font-size: 1.5625rem;
+  font-weight: 300;
+}
+
+.plan__description {
+  margin: 2em 0;
+  line-height: 1.5;
+}
+
+/* ///////////////
+  Teams
+  ////////////// */
+
+.team {
+  margin: 8.125rem auto;
+  background: #fafafa;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3.9375rem;
+}
+
+.team-member {
+  background: #abc;
+  text-align: left;
+  flex: 1 1 45%;
+  margin: 1em;
+  display: flex;
+  border-radius: 0.5em;
+  align-items: center;
+  padding: 0.5em 0.6875em 0.5em 0.5em;
+}
+
+.info .name {
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.info .position {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.info .position + p {
+  line-height: 1.5;
+}
+
+.team-member--light {
+  background: linear-gradient(333.85deg, #e5e3e8 0.88%, #fafafa 99.09%);
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.team-member--light .info {
+  text-align: right;
+  margin-right: 1.75rem;
+  color: #4e4e4e;
+}
+
+.team-member--light .info .name {
+  color: #00a1ab;
+}
+
+.team-member--dark {
+  background: #4e4e4e;
+  justify-content: space-between;
+}
+
+.team-member--dark .info {
+  text-align: left;
+  margin-left: 1.75rem;
+  color: #fff;
+}
+
+.team-member img {
+  width: 10rem;
+  border-radius: 0.75rem;
+}
